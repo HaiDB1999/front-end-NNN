@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/test.css">
+    <script src="js/test.js"></script>
+</head>
+
+<body>
+    <div class="main-block">
+        <div class="left-part">
+            <table>
+                <h2 style="text-align: center;">Employees Table</h2>
+                <tbody id="employees-table">
+                    <tr>
+                        <th>Id</th>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Address</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <form id="create" action="http://127.0.0.1:5502/test.html">
+            <div class="title">
+                <i class="fas fa-pencil-alt"></i>
+                <h2>Create</h2>
+            </div>
+            <div class="info">
+                <input id="newFirstName" class="fname" type="text" name="name" placeholder="Firstname">
+                <input id="newLastName" type="text" name="name" placeholder="Lastname">
+                <input id="newAddress" type="text" name="name" placeholder="Address">
+            </div>
+            <button id="submit-create" onclick="SubmitCreate()"> Create</button>
+        </form>
+
+        <form id="Edit" action="http://127.0.0.1:5502/test.html">
+            <div class="title">
+                <i class="fas fa-pencil-alt"></i>
+                <h2>Edit</h2>
+            </div>
+            <div class="info">
+                <input id='key' type="number" placeholder="0">
+                <input id="updateFirstName" class="fname" type="text" name="name" placeholder="New Firstname">
+                <input id="updateLastName" type="text" name="name" placeholder="New Lastname">
+                <input id="updateAddress" type="text" name="name" placeholder="New Address">
+            </div>
+            <button id="submit-create" onclick="SubmitEdit()"> Create</button>
+        </form>
+    </div>
+</body>
+
+</html>
